@@ -38,7 +38,7 @@ namespace Assignment02
         // makes the hero fight. If a hit lands then the damage will be shown
         public void fight()
         {
-            if (this.hitAttempt() == true)
+            if (this.hitAttempt())
             {
                 Console.WriteLine("Target hit for {0} damage!", this.hitDamage());
             }
@@ -68,7 +68,7 @@ namespace Assignment02
                         Console.WriteLine("How did you break my program?!");
                         break;
                 }
-                
+
             }
         }
 

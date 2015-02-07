@@ -21,7 +21,8 @@ namespace Assignment02
         private string[] superPowers;
 
         // CONSTRUCTOR ********************/
-        public SuperHero(string name): base(name)
+        public SuperHero(string name)
+            : base(name)
         {
             this.generateAbilities();
         }
@@ -30,7 +31,7 @@ namespace Assignment02
         // displays the SuperHero's powers to the console
         public void showPowers()
         {
-            Console.WriteLine("The SuperHero {0} has: \n\t{1}  \n\t{2}  \n\t{3} .", this.name, this.superPowers[0], 
+            Console.WriteLine("The Superhero {0} has: \n\t{1}  \n\t{2}  \n\t{3}", this.name, this.superPowers[0],
                 this.superPowers[1], this.superPowers[2]);
         }
 
@@ -46,8 +47,8 @@ namespace Assignment02
             do
             {
                 randomNum = randomGenerator.Next(0, 6);
- 
-                // if the string array superPowers does not contain the random super power from the powerslist then add it
+
+                // if the string array tempPowers does not contain the random super power from the powerslist then add it
                 if (!tempPowers.Contains(powersList[randomNum]))
                 {
                     tempPowers.Add(powersList[randomNum]);

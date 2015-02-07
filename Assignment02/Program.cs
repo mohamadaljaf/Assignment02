@@ -26,9 +26,23 @@ namespace Assignment02
         static void Main(string[] args)
         {
             SuperHero superGoat = new SuperHero("Super Goat");
+            string name;
 
+            // the user can name the super goat or leave the input blank defaulting the nmae to Super Goat
+            Console.Write("Enter a super hero name for the Super Goat(leave blank for default name): ");
+            name = Console.ReadLine().Trim();
+
+            if (name != String.Empty)
+            {
+                superGoat.name = name;
+            }
+
+            // displays the super powers and options for the user in a clear and organized manner
+            Console.WriteLine(new string('-', 60));
             superGoat.showPowers();
-            Console.WriteLine("Press the spacebar to hit the target. Press any other key to quit you coward.");
+            Console.WriteLine(new string('-', 60));
+            Console.WriteLine("\tPress the spacebar to hit the target. \n\tPress any other key to quit you coward.");
+            Console.WriteLine(new string('-', 60));
 
             // lets the user fight as long as they want
             do
