@@ -3,9 +3,8 @@
 ///   
 ///   Date last modified:   February 06, 2015
 ///   
-///   Class description:    A hero that has the attributes strength, speed and health. Can
-///                         fight, but misses 20% of the time. Damage is displayed to the
-///                         console when a hit lands or a missed message is displayed otherwise.
+///   Class description:    A SuperHero object has the random super powers. Is a child class of
+///                         the Hero class and therefore inherits its methods.
 ///------------------------------------------------------------------------------------------
 using System;
 using System.Collections.Generic;
@@ -15,7 +14,7 @@ using System.Threading.Tasks;
 
 namespace Assignment02
 {
-    // SuperHero class - blueprint for Super hero objects
+    // SuperHero sublcass of Hero class
     class SuperHero : Hero
     {
         // PRIVATE Properties ********************/
