@@ -10,6 +10,7 @@ namespace Assignment02
     {
         static void Main(string[] args)
         {
+            SuperHero test = new SuperHero("Test");
         }
     }
 }
