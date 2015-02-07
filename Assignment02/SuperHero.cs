@@ -27,6 +27,14 @@ namespace Assignment02
             this.generateAbilities();
         }
 
+        // PUBLIC Methods ********************/
+        // displays the SuperHero's powers to the console
+        public void showPowers()
+        {
+            Console.WriteLine("The SuperHero {0} has: \n\t{1}  \n\t{2}  \n\t{3} .", this.name, this.superPowers[0], 
+                this.superPowers[1], this.superPowers[2]);
+        }
+
         // PRIVATE Methods ********************/
         // randomly generates the hero's super powers from a list of 6 powers
         private void generateAbilities()
