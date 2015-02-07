@@ -46,7 +46,7 @@ namespace Assignment02
 
             do
             {
-                randomNum = randomGenerator.Next(1, 7);
+                randomNum = randomGenerator.Next(0, 6);
  
                 // if the string array superPowers does not contain the random super power from the powerslist then add it
                 if (!tempPowers.Contains(powersList[randomNum]))
